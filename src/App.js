@@ -1,33 +1,22 @@
-import Directory from "./components/directory/directory.component";
+import { Routes, Route } from "react-router-dom";
+
+import Navigation from "./routes/navigation/navigation.component";
+import Home from "./routes/home/home.component";
+
+const Hello = () => {
+  return <h1>Hello</h1>;
+};
 
 const App = () => {
-  const categories = [
-    {
-      id: 1,
-      title: "movers",
-      imgUrl:
-        "https://cdnep-uhaul-uhaulcom-global-p-001.azureedge.net/uhaulcom/cdn/Misc/Home/SixPack/moving-help.webp",
-    },
-    {
-      id: 2,
-      title: "moving supplies",
-      imgUrl:
-        "https://cdnep-uhaul-uhaulcom-global-p-001.azureedge.net/uhaulcom/cdn/Misc/Home/SixPack/six-pack-ms.webp",
-    },
-    {
-      id: 3,
-      title: "trucks",
-      imgUrl:
-        "https://cdnep-uhaul-uhaulcom-global-p-001.azureedge.net/uhaulcom/cdn/Misc/Trucks/Home/truck-rentals-lg.webp",
-    },
-    {
-      id: 4,
-      title: "storage",
-      imgUrl:
-        "https://cdnep-uhaul-uhaulcom-global-p-001.azureedge.net/uhaulcom/cdn/Misc/Home/SixPack/self-storage.webp",
-    },
-  ];
-  return <Directory categories={categories} />;
+  return (
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        {/* <Route index={true} path="/" element={<Home />} /> */}
+        <Route index={true} element={<Home />} />
+        <Route path="movers" element={<Hello />} />
+      </Route>
+    </Routes>
+  );
 };
 
 export default App;
