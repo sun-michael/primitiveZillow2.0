@@ -2,9 +2,10 @@ import { Routes, Route } from "react-router-dom";
 
 import Navigation from "./routes/navigation/navigation.component";
 import Home from "./routes/home/home.component";
+import SignIn from "./routes/sign-in/sign-in.component";
 
 const Hello = () => {
-  return <h1>Hello</h1>;
+  return <h1>hellow page intact</h1>;
 };
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         {/* <Route index={true} path="/" element={<Home />} /> */}
         <Route index={true} element={<Home />} />
         <Route path="movers" element={<Hello />} />
+        <Route path="sign-in" element={<SignIn />} />
       </Route>
     </Routes>
   );

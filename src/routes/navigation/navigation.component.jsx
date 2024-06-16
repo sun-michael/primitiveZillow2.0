@@ -19,6 +19,11 @@ const Navigation = () => {
                                     <a class="nav-link active" aria-current="page" >movers</a>
                                 </Link>
                             </ul>
+                            <ul class="navbar-nav">
+                                <Link class="nav-item" to="/sign-in">
+                                    <a class="nav-link active" aria-current="page" >sign-in</a>
+                                </Link>
+                            </ul>
                     </div>
                 </nav>
             </div>
