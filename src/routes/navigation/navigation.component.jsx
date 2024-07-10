@@ -20,8 +20,8 @@ const Navigation = () => {
                                 </Link>
                             </ul>
                             <ul class="navbar-nav">
-                                <Link class="nav-item" to="/sign-in">
-                                    <a class="nav-link active" aria-current="page" >sign-in</a>
+                                <Link class="nav-item" to="/auth">
+                                    <a class="nav-link active" aria-current="page" >sign in</a>
                                 </Link>
                             </ul>
                     </div>
