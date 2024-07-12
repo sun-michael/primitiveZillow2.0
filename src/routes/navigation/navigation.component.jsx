@@ -7,13 +7,14 @@ import { signOutUser } from "../../utils/firebase/firebase.utils";
 import Logo from "../../assets/logo_nb.svg";
 
 const Navigation = () => {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
+  const { currentUser } = useContext(UserContext);
   //   console.log("currentUser", currentUser);
-  const signOutHandler = async () => {
-    const res = await signOutUser();
-    console.log("res=", res);
-    setCurrentUser(null);
-  };
+
+  // const signOutHandler = async () => {
+  //   const res = await signOutUser();
+  //   console.log("res=", res);
+  //   setCurrentUser(null);
+  // };
 
   return (
     <Fragment>
@@ -38,7 +39,7 @@ const Navigation = () => {
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    onClick={signOutHandler}
+                    onClick={signOutUser}
                   >
                     sign out
                   </a>
