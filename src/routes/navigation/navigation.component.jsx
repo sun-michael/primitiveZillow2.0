@@ -2,7 +2,7 @@ import { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 import { UserContext } from "../../contexts/user.context";
-import { CartContext } from "../../contexts/card.context";
+import { CartContext } from "../../contexts/cart.context";
 
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 
