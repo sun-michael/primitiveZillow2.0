@@ -18,6 +18,7 @@ const Category = () => {
 
   return (
     <div className="category-container">
+      <h2 className="title">{category.toUpperCase()}</h2>
       {products && //to insure the data is fetched from Firebase
         products.map((product) => {
           return <ProductCard key={product.id} product={product} />;
