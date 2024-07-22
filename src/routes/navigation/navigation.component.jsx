@@ -1,6 +1,8 @@
 import { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 
+import { NavigationContainer } from "./navigation.styles.scss";
+
 import { UserContext } from "../../contexts/user.context";
 import { CartContext } from "../../contexts/cart.context";
 
@@ -26,31 +28,36 @@ const Navigation = () => {
               </Link>
             </div>
             <ul class="navbar-nav">
-              <Link class="nav-item" to="/movers">
-                <a class="nav-link active" aria-current="page">
+              <li class="nav-item">
+                <Link class="nav-link " to="/movers" aria-current="page">
                   movers
-                </a>
-              </Link>
+                </Link>
+              </li>
             </ul>
             {currentUser ? (
               <ul class="navbar-nav">
-                <Link class="nav-item" to="/auth">
-                  <a
-                    class="nav-link active"
+                <li class="nav-item">
+                  <Link
+                    class="nav-link text-nowrap"
                     aria-current="page"
+                    to="/auth"
                     onClick={signOutUser}
                   >
                     sign out
-                  </a>
-                </Link>
+                  </Link>
+                </li>
               </ul>
             ) : (
               <ul class="navbar-nav">
-                <Link class="nav-item" to="/auth">
-                  <a class="nav-link active" aria-current="page">
+                <li class="nav-item">
+                  <Link
+                    class="nav-link text-nowrap"
+                    aria-current="page"
+                    to="/auth"
+                  >
                     sign in
-                  </a>
-                </Link>
+                  </Link>
+                </li>
               </ul>
             )}
 
