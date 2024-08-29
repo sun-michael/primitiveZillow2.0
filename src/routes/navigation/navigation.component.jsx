@@ -29,8 +29,8 @@ const Navigation = () => {
             </div>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <Link class="nav-link " to="/movers" aria-current="page">
-                  movers
+                <Link class="nav-link " to="/shop" aria-current="page">
+                  shop
                 </Link>
               </li>
             </ul>
