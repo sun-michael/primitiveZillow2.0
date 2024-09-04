@@ -30,7 +30,14 @@ const Navigation = () => {
             <ul class="navbar-nav">
               <li class="nav-item">
                 <Link class="nav-link " to="/shop" aria-current="page">
-                  shop
+                  clothing
+                </Link>
+              </li>
+            </ul>{" "}
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <Link class="nav-link " to="/truck" aria-current="page">
+                  trucks
                 </Link>
               </li>
             </ul>
@@ -60,7 +67,6 @@ const Navigation = () => {
                 </li>
               </ul>
             )}
-
             <CardIcon />
           </div>
           {isCartOpen && <CartDropdown />}
