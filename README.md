@@ -1,3 +1,7 @@
+# New Feature Coming
+Automobile rental - Oct 2024
+payment Stripe implementation - Nov 2024 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
