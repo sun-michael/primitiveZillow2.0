@@ -1,13 +1,13 @@
-import { useContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
-import { CategoriesContext } from "../../contexts/categories.context";
 import ProductCard from "../../components/product-card/product-card.component";
 
+import { selectCategoriesMap } from "../../store/categories/category.selector";
 const Category = () => {
   const { category } = useParams();
-  const { categoriesMap } = useContext(CategoriesContext);
-
+  const categoriesMap = useSelector(selectCategoriesMap);
   //this will re-render everytime the page loads so we want to avoid and instead below
   // const products = categoriesMap[category]
   const [products, setProducts] = useState(categoriesMap[category]);
