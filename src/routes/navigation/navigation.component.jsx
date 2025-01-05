@@ -27,10 +27,17 @@ const Navigation = () => {
                 <img src={Logo} alt="Bootstrap" width="30" height="24" />
               </Link>
             </div>
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link " to="/movers" aria-current="page">
-                  movers
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <Link class="nav-link " to="/shop" aria-current="page">
+                  clothing
+                </Link>
+              </li>
+            </ul>{" "}
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <Link class="nav-link " to="/truck" aria-current="page">
+                  trucks
                 </Link>
               </li>
             </ul>
@@ -60,7 +67,6 @@ const Navigation = () => {
                 </li>
               </ul>
             )}
-
             <CardIcon />
           </div>
           {isCartOpen && <CartDropdown />}
