@@ -20,9 +20,9 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <div class="container">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+          <div className="container-fluid">
+            <div className="container">
               <Link className="navbar-brand" to="/">
                 <img src={Logo} alt="Bootstrap" width="30" height="24" />
               </Link>
@@ -42,10 +42,10 @@ const Navigation = () => {
               </li>
             </ul>
             {currentUser ? (
-              <ul class="navbar-nav">
-                <li class="nav-item">
+              <ul className="navbar-nav">
+                <li className="nav-item">
                   <Link
-                    class="nav-link text-nowrap"
+                    className="nav-link text-nowrap"
                     aria-current="page"
                     to="/auth"
                     onClick={signOutUser}
@@ -55,10 +55,10 @@ const Navigation = () => {
                 </li>
               </ul>
             ) : (
-              <ul class="navbar-nav">
-                <li class="nav-item">
+              <ul className="navbar-nav">
+                <li className="nav-item">
                   <Link
-                    class="nav-link text-nowrap"
+                    className="nav-link text-nowrap"
                     aria-current="page"
                     to="/auth"
                   >

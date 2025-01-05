@@ -11,7 +11,6 @@ const DirectoryItem = ({ category }) => {
             <h5 class="card-title">{title}</h5>
             <p class="card-text">More description coming soon..</p>
             <p class="card-text">
-              {/* <small class="text-body-secondary">Last updated 3 mins ago</small> */}
             </p>
           </div>
         </div>
