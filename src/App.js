@@ -25,7 +25,7 @@ const App = () => {
       if (user) {
         createUserDocumentFromAuth(user);
       }
-      console.log("UserProvider: user=", user);
+      // console.log("UserProvider: user=", user);
       dispatch(setCurrentUser(user));
     });
     return unsubscribe;
